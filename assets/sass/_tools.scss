@@ -1,0 +1,41 @@
+.tools {
+    padding: 59px 0 68px;
+    background-color: var(--gray-1e);
+    &-main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    &-image {
+        flex-shrink: 0;
+    }
+    &-content {
+        flex: 1;
+        max-width: 583px;
+    }
+    &-heading {
+        color: white;
+        margin-bottom: 9px;
+    }
+    &-text {
+        max-width: 365px;
+        margin-bottom: 41px;
+        color: #B5B3AF;
+    }
+
+    @include maxWidth(1023px) {
+        &-main {
+            flex-direction: column;
+            gap: 40px;
+        }
+        &-image {
+            margin: 0 auto;
+            transform: none;
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

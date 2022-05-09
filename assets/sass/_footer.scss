@@ -1,0 +1,22 @@
+.footer {
+    padding: 70px 0;
+    background-color: var(--gray-1e);
+    &-header {
+        text-align: center;
+        .heading--big {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .text {
+            max-width: 339px;
+            color: var(--gray-b5);
+            margin: 0 auto 35px;
+        }
+    }
+    &-button {
+        display: inline-flex;
+        gap: 0 10px;
+        align-items: center;
+    }
+}

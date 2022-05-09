@@ -1,0 +1,96 @@
+.header{
+    background-image: linear-gradient(
+        to bottom,
+        var(--gray-1e) 80%,
+        var(--body-bg) 80%
+        );
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 48px 0 83px;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 0 var(--gap);
+        font-size: 25px;
+        font-weight: 600;
+    }
+    &__login {
+        display: inline-block;
+        color: #fff;
+        padding: 9px 25px;
+        border-radius: 6px;
+        line-height: 1.625;
+        position: relative;
+        &:before {
+            content: ""; 
+            position: absolute;
+            background-color: var(--gray-b5);
+            opacity: 0.2;
+            inset: 0;
+            border-radius: inherit;
+        }
+    }
+
+    &__content {
+        max-width: 837px;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 88px;
+    }
+
+    &__heading {
+        font-size: 52px;
+        line-height: calc(62 / 52);
+        margin-bottom: 54px;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 28px;
+    }
+
+    &__works {
+        display: flex;
+        align-items: center;
+        gap: 0 16px;
+        color: #fff;
+        font-size: 18px;
+        line-height: calc(48 / 18);
+    }
+    &__bottom {
+        img {
+            max-width: 100%;
+        }
+    }
+    @include maxWidth(1023px) {
+        &__logo {
+            font-size: 20px;
+        }
+        &__login {
+            font-size: 12px;
+            margin-left: auto;
+            margin-right: 40px;
+        }
+        &__top {
+            padding: 30px 0 55px;
+            justify-content: flex-start;
+        }
+        &__heading {
+            font-size: 30px;
+            line-height: calc(40 / 30);
+            margin-bottom: 35px;
+        }
+        &__buttons {
+            gap: 0 20px;
+            margin-bottom: 64px;
+        }
+        &__works span{
+            display: none;
+        }
+    }
+}

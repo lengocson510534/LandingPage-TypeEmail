@@ -1,0 +1,40 @@
+.feature {
+    &-main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &-image {
+        flex-shrink: 0;
+    }
+    &-content {
+        flex: 1;
+        max-width: 548px;
+    }
+    &-title {
+        margin-bottom: 18px;
+    }
+    &-text {
+        margin-bottom: 28px;
+    }
+    &-link {
+        margin-top: 51px;
+        padding: 16px 58px;
+    }
+
+    @include maxWidth(1023px) {
+        padding-top: 60px;
+        &-main {
+            flex-direction: column;
+            gap: 64px 0;
+        }
+        &-image {
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
