@@ -204,7 +204,7 @@ body {
 .menu-toggle {
   display: none;
 }
-.menuitem.menu-close {
+.menu__item.menu-close {
   display: none;
 }
 .menu__link {
